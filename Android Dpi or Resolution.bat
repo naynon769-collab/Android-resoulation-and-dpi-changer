@@ -18,7 +18,7 @@ if "%option%"=="1" (
     echo DPI value reset to %dpi%.
     goto menu
 ) else if "%option%"=="2" (
-    set /p width=1920 the width in pixels: 
+    set /p width= 1920 the width in pixels: 
     set /p height=Enter the height in pixels:
     adb shell wm size %width%x%height%
     echo Resolution set to %width%x%height%.
