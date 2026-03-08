@@ -10,7 +10,7 @@ echo 1. Change DPI
 echo 2. Change Resolution
 echo 3. Exit
 
-set /p option= "=="2" Enter your choice (1/2/3): 
+set /p option= "=="2" Enter your choice (1/2/3):  
 
 if "%option%"=="1" (
     set /p dpi=Enter the default DPI value for your device: 
@@ -30,5 +30,6 @@ if "%option%"=="1" (
     echo Invalid option. Please try again.
     goto menu
 )
+
 
 
