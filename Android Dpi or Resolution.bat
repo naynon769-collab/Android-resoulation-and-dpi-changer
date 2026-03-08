@@ -10,7 +10,7 @@ echo 1. Change DPI
 echo 2. Change Resolution
 echo 3. Exit
 
-set /p "%option%"=="2":  
+set /p "%option%"=="2": adb shell wm size width 1920 x 2940 height  
 
 if "%option%"=="1" (
     set /p dpi=Enter the default DPI value for your device: 
