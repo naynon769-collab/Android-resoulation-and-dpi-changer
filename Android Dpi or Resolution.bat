@@ -3,7 +3,7 @@
 :menu
 echo Current Values:
 adb shell wm density
-adb shell wm size Physical size
+adb shell wm size (Physical size)
 echo.
 echo Select an option:
 echo 1. Change DPI
