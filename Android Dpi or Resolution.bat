@@ -19,9 +19,9 @@ if "%option%"=="1" (
     goto menu
 ) else if "%option%"=="2" (
     set /p width= 720 Enter the width in pixels: 
-    set /p height= the height in pixels:
-    adb shell wm size %width%x%height%
-    echo Resolution set to widthx%height%.
+    set /p height= 720 height in pixels:
+    adb shell wm size width 1920 x 2940 height
+    echo Resolution set to width 1000 x 1000 height.
     goto menu
 ) else if "%option%"=="3" (
     echo Exiting...
@@ -30,4 +30,5 @@ if "%option%"=="1" (
     echo Invalid option. Please try again.
     goto menu
 )
+
 
