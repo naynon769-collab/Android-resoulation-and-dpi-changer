@@ -13,7 +13,7 @@ echo 1. Set Custom Resolution (16:9 = 720x1280)
 echo 2. Set Custom DPI (Lower = Wider Screen)
 echo 3. Reset to Default
 echo 4. Exit
-echo Resolution set to 720w%x12080h%
+echo Resolution set to 720w%x1600h%
 
 set /p opt="Select option (1-4): "
 
