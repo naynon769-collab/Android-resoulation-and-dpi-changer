@@ -13,7 +13,7 @@ echo 1. Set Custom Resolution (16:9 = 720x1280)
 echo 2. Set Custom DPI (Lower = Wider Screen)
 echo 3. Reset to Default
 echo 4. Exit
-echo -------------------------------------------
+echo Resolution set to 720w%x12080h%
 
 set /p opt="Select option (1-4): "
 
@@ -27,7 +27,7 @@ goto menu
 set /p w="Enter width (e.g. 720): "
 set /p h="Enter height (e.g. 1280): "
 adb shell wm size 720x1600
-echo Resolution set to %w%x%h%
+echo Resolution set to 720w%x12080h%
 pause
 goto menu
 
