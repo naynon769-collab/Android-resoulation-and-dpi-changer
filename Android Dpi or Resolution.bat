@@ -23,7 +23,7 @@ if "%opt%"=="3" goto reset_all
 if "%opt%"=="4" exit
 goto menu
 
-:change_res
+1:change_res
 set /p w="Enter width (e.g. 720): "
 set /p h="Enter height (e.g. 1280): "
 adb shell wm size %w%x%h%
