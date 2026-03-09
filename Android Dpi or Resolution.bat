@@ -31,7 +31,7 @@ pause
 goto menu
 
 :change_dpi
-echo [Info] Lower DPI = Smaller icons/More space (ลื่นตาขึ้น)
+echo [Info] Lower DPI = Smaller icons/More space (380)
 set /p dpi="Enter DPI value (e.g. 380, 400, 440): "
 adb shell wm density %dpi%
 echo DPI set to %dpi%
