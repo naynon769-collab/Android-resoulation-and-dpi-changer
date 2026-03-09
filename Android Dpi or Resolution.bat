@@ -24,7 +24,7 @@ goto menu
 
 :change_res
 set /p w="Enter width (e.g. 1080): "
-set /p h="Enter height (e.g. 2400): "
+set /p h="Enter height (e.g. 1920): "
 adb shell wm size 1920x2040
 echo Resolution set to 720x1600
 pause
