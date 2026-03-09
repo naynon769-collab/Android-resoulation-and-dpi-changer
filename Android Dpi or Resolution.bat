@@ -1,32 +1,46 @@
 @echo off
-
+title Android Smooth Screen Tool
 :menu
-echo Current Values:
-adb shell wm density
+cls
+echo ===========================================
+echo      Android Display Adjustment (ADB)
+echo ===========================================
+echo Current Status:
 adb shell wm size
-echo.
-echo Select an option:
-echo 1. Change DPI
-echo 2. Change Resolution
-echo 3. Exit
+adb shell wm density
+echo -------------------------------------------
+echo 1. Set Custom Resolution (ปรับความละเอียด)
+echo 2. Set Custom DPI (ปรับความกว้าง/ความลื่นไหลสายตา)
+echo 3. Reset to Default (คืนค่าเริ่มต้น - แนะนำหากมีปัญหา)
+echo 4. Exit
+echo -------------------------------------------
+set /p opt="Select option (1-4): "
 
-set /p option=Enter your choice (1/2/3): 
+if "%opt%"=="1" goto change_res
+if "%opt%"=="2" goto change_dpi
+if "%opt%"=="3" goto reset_all
+if "%opt%"=="4" exit
+goto menu
 
-if "%option%"=="1" (
-    set /p dpi=Enter the default DPI value for your device: 
-    adb shell wm density %dpi%
-    echo DPI value reset to %dpi%.
-    goto menu
-) else if "%option%"=="2" (
-    set /p width=Enter the width in pixels: 
-    set /p height=Enter the height in pixels: 
-    adb shell wm size %width%x%height%
-    echo Resolution set to %width%x%height%.
-    goto menu
-) else if "%option%"=="3" (
-    echo Exiting...
-    exit /b
-) else (
-    echo Invalid option. Please try again.
-    goto menu
-)
+:change_res
+set /p w="Enter width (e.g. 1080): "
+set /p h="Enter height (e.g. 1920): "
+adb shell wm size 1920x2040
+echo Resolution set to 720x1600
+pause
+goto menu
+
+:change_dpi
+echo [Info] Lower DPI = Smaller icons/More space (380)
+set /p dpi="Enter DPI value (e.g. 380, 400, 440): "
+adb shell wm density %dpi%
+echo DPI set to %dpi%
+pause
+goto menu
+
+:reset_all
+adb shell wm size reset
+adb shell wm density reset
+echo All settings reset to default.
+pause
+goto menu
