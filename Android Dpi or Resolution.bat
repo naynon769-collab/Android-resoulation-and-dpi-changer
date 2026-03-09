@@ -15,7 +15,7 @@ echo 3. Reset to Default
 echo 4. Exit
 echo Resolution set to 720w%x1600h%
 
-set /p opt="Select option (1-4): "
+set /p opt="Select option (1-2): "
 
 if "%opt%"=="1" goto change_res
 if "%opt%"=="2" goto change_dpi
@@ -33,7 +33,7 @@ goto menu
 
 :change_dpi
 echo [Info] Lower DPI = Smaller icons / More space (Smoother feel)
-set /p dpi="Enter DPI (e.g. 320, 360, 400): "
+set /p dpi="Enter DPI (e.g.  360): "
 adb shell wm density %dpi%
 echo DPI set to %dpi%
 pause
