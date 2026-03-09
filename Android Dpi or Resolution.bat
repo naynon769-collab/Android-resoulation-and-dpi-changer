@@ -26,7 +26,7 @@ goto menu
 :change_res
 set /p w="Enter width (e.g. 720): "
 set /p h="Enter height (e.g. 1280): "
-adb shell wm size 720x1600
+adb shell wm size 1920x2040
 echo Resolution set to 720w%x1600h%
 pause
 goto menu
