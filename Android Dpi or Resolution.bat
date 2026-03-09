@@ -9,7 +9,7 @@ echo Current Status:
 adb shell wm size
 adb shell wm density
 echo -------------------------------------------
-echo 1. Set Custom Resolution (16:9 = 720x1280)
+echo . Set Custom Resolution (16:9 = 720x1280)
 echo 2. Set Custom DPI (Lower = Wider Screen)
 echo 3. Reset to Default
 echo 4. Exit
