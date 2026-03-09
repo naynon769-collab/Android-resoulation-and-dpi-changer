@@ -6,7 +6,7 @@ echo ===========================================
 echo      Android Display Adjustment (ADB)
 echo ===========================================
 echo Current Status:
-adb shell wm size 720x1600
+adb shell wm size (720x1600)
 adb shell wm density
 echo -------------------------------------------
 echo 1. Set Custom Resolution (ปรับความละเอียด)
