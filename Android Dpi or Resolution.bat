@@ -24,8 +24,8 @@ if "%opt%"=="4" exit
 goto menu
 
 :change_res
-set /p w="Enter width (e.g. 720): "
-set /p h="Enter height (e.g. 1280): "
+set /p w="Enter width (e.g. 1920): "
+set /p h="Enter height (e.g. 2040): "
 adb shell wm size 1920x2040
 echo Resolution set to 720w%x1600h%
 pause
