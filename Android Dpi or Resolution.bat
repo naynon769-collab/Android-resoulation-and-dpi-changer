@@ -27,7 +27,7 @@ goto menu
 set /p w="Enter width (e.g. 720): "
 set /p h="Enter height (e.g. 1280): "
 adb shell wm size 720x1600
-echo Resolution set to 720w%x12080h%
+echo Resolution set to 720w%x1600h%
 pause
 goto menu
 
