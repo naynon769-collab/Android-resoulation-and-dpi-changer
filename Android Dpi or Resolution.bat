@@ -15,7 +15,7 @@ echo 3. Reset to Default
 echo 4. Exit
 echo -------------------------------------------
 
-set /p opt="Select option (1-4): "
+set /p opt="Select option (2-4): "
 
 if "%opt%"=="1" goto change_res
 if "%opt%"=="2" goto change_dpi
