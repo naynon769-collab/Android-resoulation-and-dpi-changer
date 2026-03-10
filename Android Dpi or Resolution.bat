@@ -27,7 +27,7 @@ goto menu
 :change_size
 cls
 echo [Tip] Enter WidthxHeight (e.g., 1080x1920)
-set /p w_h="Enter : shell wm size "1920x2040
+set /p w_h="Enter : WidthxHeight (e.g., 1920x2040)
 adb shell wm size %w_h%
 echo [Success] Resolution set to %w_h%
 pause
