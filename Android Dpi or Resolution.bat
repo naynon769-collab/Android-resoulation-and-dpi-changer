@@ -11,7 +11,7 @@ echo Current Status:
 adb shell wm size
 adb shell wm density
 echo -------------------------------------------
-echo 1. Set Resolution (Density) - e.g.,1280×720
+echo 1. Set Resolution (e.g., 720x1600)
 echo 2. Set Custom DPI (Density) - e.g., 320
 echo 3. Reset to Default (Reset All)
 echo 4. Exit
