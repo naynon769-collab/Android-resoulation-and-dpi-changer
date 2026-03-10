@@ -4,7 +4,7 @@
 echo Current Values:
 adb shell wm density
 adb shell wm size 
-echo.
+echo.    echo Resolution set to width 540 x 1200 height.
 echo Select an option:
 echo 1. Change DPI
 echo 2. Change Resolution to width  540 x 1200 height.
